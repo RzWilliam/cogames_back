@@ -6,7 +6,7 @@ import cors from 'cors';
 
 const app = express();
 const server = http.createServer(app);
-const PORT = process.env.PORT || 3000; // Utilisation de la variable d'environnement PORT ou 3000 par défaut
+const PORT = process.env.PORT || 3002; // Utilisation de la variable d'environnement PORT ou 3000 par défaut
 const io = new Server(server, {
     cors: {
         origin: '*',
